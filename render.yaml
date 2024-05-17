@@ -4,10 +4,6 @@ services:
   env: docker
   plan: standard
   autoDeploy: false
-  disk:
-    name: wordpress
-    mountPath: /var/www/html
-    sizeGB: 20
   envVars:
   - key: WORDPRESS_DB_HOST
     fromService:
